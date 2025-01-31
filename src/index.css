@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap') */
+
+/* Apply Montserrat font to all headings h1 - h6 */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+
+  /* Apply Open Sans font to all other text */
+  body, p, span, div, a, li, label, button, input, textarea {
+    @apply font-openSans;
+  }
+}
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.slick-dots li button:before {
+  color: orange; /* Set the dot color */
+  font-size: 12px; /* Adjust size if needed */
+  opacity: 0.7; /* Slightly transparent for inactive dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: orange; /* Active dot color */
+  opacity: 1; /* Fully visible for active dots */
+}
